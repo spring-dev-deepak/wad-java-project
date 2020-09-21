@@ -1,0 +1,27 @@
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+footer {
+    border-top: 1px solid grey;
+    padding: 8px;
+    color: white;
+    background-color: rgb(66, 60, 60);
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.navbar-nav a:hover {
+    font-size: 18px;
+}
