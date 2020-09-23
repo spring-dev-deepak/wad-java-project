@@ -9,6 +9,11 @@ body {
     flex-grow: 1;
 }
 
+img {
+    width: 1200px;
+    height: 250px;
+} 
+
 footer {
     border-top: 1px solid grey;
     padding: 8px;
@@ -22,6 +27,26 @@ a {
     margin-right: 40px;
 }
 
+/* 
 .navbar-nav a:hover {
     font-size: 18px;
+} */
+
+.card {
+    max-width: 25rem;
+    height: 17rem;
+    margin: 5px;
+}
+
+.card-body h6 {
+    text-align: center;
+    color: grey;
+}
+
+#news-update1, #news-update2 {
+    margin: 20px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    font-weight: bold;
 }
