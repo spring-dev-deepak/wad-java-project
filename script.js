@@ -1,31 +1,32 @@
-const businessNewsApiUrl = 'https://api.nytimes.com/svc/topstories/v2/business.json?api-key='
-const sportsNewsApiUrl = 'https://api.nytimes.com/svc/topstories/v2/sports.json?api-key='
-const apiKey = '22rCdhycw7PDC0PvAcnKIVo0oFGAQLuX'
+const signupData = document.querySelector('.signup-data')
+const inputData = document.querySelectorAll('input')
 
-fetch(businessNewsApiUrl + apiKey).then(response => {
-    response.json().then(data => {
-        const newsData = data.results;
-        var news;
+signupData.addEventListener('submit', (e) => {
+    e.preventDefault()
 
-        const newsUpdate1 = document.getElementById('news-update1')
+    const registerDetails = {
+        firstName: inputData[0].value,
+        age: inputData[1].value,
+        gender: inputData[2].value,
+        userName: inputData[3].value,
+        password: inputData[4].value,
+        accNo: inputData[5].value,
+        cusNo: inputData[6].value,
+        branch: inputData[7].value,
+        debitNo: inputData[8].value,
+        cvv: inputData[9].value,
+        city: inputData[10].value,
+        state: inputData[11].value,
+        eMail: inputData[12].value,
+        phoneNo: inputData[13].value,
+        zipCode: inputData[14].value,
+    }
 
-        for(news of newsData){
-           newsUpdate1.innerHTML = newsUpdate1.innerHTML + news.title + "<br><br>"
-        }
-    })
-})
+    console.log(registerDetails)
 
-fetch(sportsNewsApiUrl + apiKey).then(response => {
-    response.json().then(data => {
-        const newsData = data.results;
-        var news;
+    localStorage.setItem(registerDetails.userName, JSON.stringify(registerDetails))
 
-        const newsUpdate2 = document.getElementById('news-update2')
-
-        for(news of newsData){
-           newsUpdate2.innerHTML = newsUpdate2.innerHTML + news.title + "<br><br>"
-        }
-    })
+    location.href = "./index.html"
 })
 
 

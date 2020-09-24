@@ -50,3 +50,23 @@ a {
     color: blue;
     font-weight: bold;
 }
+
+.heading {
+    text-align: left;
+    color: greenyellow;
+}
+
+.signup-form {
+    text-align: left;
+    color: skyblue;
+}
+
+.signin-form {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.form-header {
+    color: grey;
+    font-weight: bold;
+}
