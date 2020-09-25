@@ -32,7 +32,7 @@ a {
     font-size: 18px;
 } */
 
-.card {
+.home .card {
     max-width: 25rem;
     height: 17rem;
     margin: 5px;
@@ -73,4 +73,33 @@ a {
 
 marquee {
     height: 12rem;
+}
+
+.user-details .card {
+    height: 25rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.uhead {
+    text-align: right;
+    color: gray;
+}
+
+.udetails {
+    text-align: left;
+    color: navy;
+}
+
+.accdetails .card:hover {
+    box-shadow: 3px 3px 3px 3px grey;
+}
+
+.accdetails .card {
+    height: 25rem;
+}
+
+.logout {
+    text-align: right;
 }

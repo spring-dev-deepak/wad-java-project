@@ -10,7 +10,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <title>Products</title>
+    <title>Profile</title>
   </head>
   <body>
     <header class="container">
@@ -39,13 +39,59 @@
       </nav>
     </header>
 
-    <div class="main-container">
-     
+    <div class="main-container container jumbotron">
+      <div class="row">
+        <div class="col-lg-4 user-details">
+          <div class="card shadow rounded">
+            <div class="card-body">
+              <h4 class="card-header">Profile</h4>
+
+              <table cellpadding="5">
+                <th>
+                  <tr>
+                    <td class="uhead">Name</td>
+                    <td id="uname" class="udetails"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="uhead">Email</td>
+                    <td id="uemail" class="udetails"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="uhead">Acc Number</td>
+                    <td id="uacc" class="udetails"></td>
+                  </tr>
+
+                  <tr>
+                    <td class="uhead">Gender</td>
+                    <td id="ugen" class="udetails"></td>
+                  </tr>
+                </th>
+              </table>
+
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 accdetails">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-header logout">
+                        Account Details
+                        <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+                    </h4>
+                </div>
+            </div>
+        </div>
+        
+      </div>
     </div>
 
     <footer class="container">
-        <p>Developed By Top-Notch Tech Team</p>
-        <span>&copy; Copyrights 2020</span>
+      <p>Developed By Top-Notch Tech Team</p>
+      <span>&copy; Copyrights 2020</span>
     </footer>
 
     <script
@@ -63,5 +109,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="./script2.js"></script>
   </body>
 </html>

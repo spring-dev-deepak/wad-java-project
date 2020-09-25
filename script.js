@@ -20,6 +20,7 @@ signupData.addEventListener('submit', (e) => {
         eMail: inputData[12].value,
         phoneNo: inputData[13].value,
         zipCode: inputData[14].value,
+        balance: Math.ceil(Math.random() * 1000)
     }
 
     console.log(registerDetails)

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./bankicon.ico">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -39,7 +40,7 @@
       </nav>
     </header>
 
-    <div class="main-container container">
+    <div class="main-container container home">
       <div id="carouselid" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselid" data-slide-to="0" class="active"></li>
@@ -63,28 +64,28 @@
         <div class="card shadow bg-white overflow-hidden">
           <div class="card-body">
             <h6 class="card-header bg-white">News Update</h6>
-            <marquee direction="up" id="marquee1">
+            <!-- <marquee direction="up" id="marquee1"> -->
               <p id="news-update1"></p>
-            </marquee>
+            <!-- </marquee> -->
           </div>
         </div>
 
         <div class="card shadow bg-white">
           <div class="card-body">
             <h6 class="card-header">Sign in</h6>
-            <form class="signin-form"> 
+            <form class="signin-form container"> 
               <table cellpadding=5>
                 <tr>
                   <td class="form-header">Username</td>
                   <td>
-                    <input type="text" placeholder="username" class="form-control form-control-sm" >
+                    <input type="text" placeholder="username" class="form-control form-control-sm" required >
                   </td>
                 </tr>
 
                 <tr>
                   <td class="form-header">Password</td>
                   <td>
-                    <input type="password" placeholder="password" class="form-control form-control-sm" >
+                    <input type="password" placeholder="password" class="form-control form-control-sm" required >
                   </td>
                 </tr>
 
@@ -102,9 +103,9 @@
         <div class="card shadow bg-white overflow-hidden">
           <div class="card-body">
             <h6 class="card-header bg-white">News Update</h6>
-            <marquee direction="up" id="marquee2">
+            <!-- <marquee direction="up" id="marquee2"> -->
               <p id="news-update2"></p>
-            </marquee>
+            <!-- </marquee> -->
           </div>
         </div>
       </div>
