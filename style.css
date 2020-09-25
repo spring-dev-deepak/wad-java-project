@@ -77,13 +77,14 @@ marquee {
 
 .user-details .card {
     height: 25rem;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    align-items: center;
+    padding-top: 1rem;
 }
 
 .uhead {
-    text-align: right;
+    text-align: left;
     color: gray;
 }
 
@@ -102,4 +103,9 @@ marquee {
 
 .logout {
     text-align: right;
+}
+
+.user-details img {
+    height: 6rem;
+    width: 6rem;
 }
