@@ -63,22 +63,22 @@ signinData.addEventListener('submit', (e) => {
 
 })
 
-// const marquee1 = document.querySelector('#marquee1')
+const marquee1 = document.querySelector('#marquee1')
 
-// marquee1.addEventListener('mouseover', () => {
-//     marquee1.stop();
-// })
+marquee1.addEventListener('mouseover', () => {
+    marquee1.stop();
+})
 
-// marquee1.addEventListener('mouseout', () => {
-//     marquee1.start();
-// })
+marquee1.addEventListener('mouseout', () => {
+    marquee1.start();
+})
 
-// const marquee2 = document.querySelector('#marquee2')
+const marquee2 = document.querySelector('#marquee2')
 
-// marquee2.addEventListener('mouseover', () => {
-//     marquee2.stop();
-// })
+marquee2.addEventListener('mouseover', () => {
+    marquee2.stop();
+})
 
-// marquee2.addEventListener('mouseout', () => {
-//     marquee2.start();
-// })
+marquee2.addEventListener('mouseout', () => {
+    marquee2.start();
+})
