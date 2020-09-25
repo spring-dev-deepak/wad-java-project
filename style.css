@@ -70,3 +70,7 @@ a {
     color: grey;
     font-weight: bold;
 }
+
+marquee {
+    height: 17rem;
+}
