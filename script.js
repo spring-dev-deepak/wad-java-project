@@ -1,3 +1,13 @@
+const currentUser = localStorage.getItem('currentUser')
+
+if(currentUser){
+        const selection = document.getElementById('signup-profile')
+        selection.innerHTML = '<a class="nav-item nav-link" href="./profile.html">Profile</a>'
+}else{
+    const selection = document.getElementById('signup-profile')
+    selection.innerHTML = '<a class="nav-item nav-link" href="./singup.html">Signup</a>'
+}
+
 const signupData = document.querySelector('.signup-data')
 const inputData = document.querySelectorAll('input')
 

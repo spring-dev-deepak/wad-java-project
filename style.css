@@ -11,12 +11,12 @@ body {
 
 img {
     width: 1200px;
-    height: 250px;
+    height: 300px;
 } 
 
 footer {
     border-top: 1px solid grey;
-    padding: 8px;
+    padding: 4px;
     color: white;
     background-color: rgb(66, 60, 60);
     text-align: center;
@@ -73,6 +73,7 @@ a {
 
 marquee {
     height: 12rem;
+    max-width: 20rem;
 }
 
 .user-details .card {
@@ -108,4 +109,9 @@ marquee {
 .user-details img {
     height: 6rem;
     width: 6rem;
+}
+
+.gd {
+    text-align: right;
+    font-size: 4.5px;
 }

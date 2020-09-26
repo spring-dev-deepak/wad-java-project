@@ -1,3 +1,13 @@
+const currentUser = localStorage.getItem('currentUser')
+
+if(currentUser){
+        const selection = document.getElementById('signup-profile')
+        selection.innerHTML = '<a class="nav-item nav-link" href="./profile.html">Profile</a>'
+}else{
+    const selection = document.getElementById('signup-profile')
+    selection.innerHTML = '<a class="nav-item nav-link" href="./singup.html">Signup</a>'
+}
+
 const businessNewsApiUrl = 'https://api.nytimes.com/svc/topstories/v2/business.json?api-key='
 const sportsNewsApiUrl = 'https://api.nytimes.com/svc/topstories/v2/sports.json?api-key='
 const apiKey = '22rCdhycw7PDC0PvAcnKIVo0oFGAQLuX'
@@ -63,22 +73,23 @@ signinData.addEventListener('submit', (e) => {
 
 })
 
-const marquee1 = document.querySelector('#marquee1')
 
-marquee1.addEventListener('mouseover', () => {
-    marquee1.stop();
-})
+// const marquee1 = document.querySelector('#marquee1')
 
-marquee1.addEventListener('mouseout', () => {
-    marquee1.start();
-})
+// marquee1.addEventListener('mouseover', () => {
+//     marquee1.stop();
+// })
 
-const marquee2 = document.querySelector('#marquee2')
+// marquee1.addEventListener('mouseout', () => {
+//     marquee1.start();
+// })
 
-marquee2.addEventListener('mouseover', () => {
-    marquee2.stop();
-})
+// const marquee2 = document.querySelector('#marquee2')
 
-marquee2.addEventListener('mouseout', () => {
-    marquee2.start();
-})
+// marquee2.addEventListener('mouseover', () => {
+//     marquee2.stop();
+// })
+
+// marquee2.addEventListener('mouseout', () => {
+//     marquee2.start();
+// })

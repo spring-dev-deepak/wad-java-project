@@ -31,7 +31,8 @@
         <div class="collapse navbar-collapse" id="collapse-id">
           <div class="navbar-nav ml-auto">
             <a class="nav-item nav-link" href="./index.html">Home</a>
-            <a class="nav-item nav-link" href="./singup.html">Signup</a>
+            <span id="signup-profile"></span>
+            <!-- <a class="nav-item nav-link" href="./singup.html">Signup</a> -->
             <a class="nav-item nav-link" href="./products.html">Products</a>
             <a class="nav-item nav-link" href="./about.html">About</a>
           </div>
@@ -39,7 +40,7 @@
       </nav>
     </header>
 
-    <div class="main-container container jumbotron">
+    <div class="profile main-container container jumbotron" style="background-color: transparent !important;">
       <div class="row">
         <div class="col-lg-4 user-details">
           <div class="card shadow rounded">
@@ -78,9 +79,9 @@
         <div class="col-lg-8 accdetails">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-header logout">
+                    <h4 class="card-header bg-white logout">
                         Account Details
-                        <button class="btn btn-danger btn-sm" onclick="logout()">Logout</button>
+                        <button class="btn btn-outline-danger btn-sm" onclick="logout()">Logout</button>
                     </h4>
                 </div>
             </div>
